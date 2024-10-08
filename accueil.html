@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e0dede;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 1em;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #e0dede;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 2em 0;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer p {
+        margin: 0 1em;
+    }
+
+    footer a {
+        color: #a6a6a6;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .profile-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 2em;
+    }
+
+    .profile-image {
+        width: 300px; /* Ajustez la taille selon vos besoins */
+        height: 300px; /* Ajustez la taille selon vos besoins */
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 5em;
+    }
+
+    .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content {
+        flex-grow: 1;
+    }
+
+    .skills-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .skills-list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 45%;
+    }
+
+    .skills-list ul li {
+        margin-bottom: 1em;
+    }
+
+    .download-cv {
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .download-cv a {
+        display: inline-block;
+        padding: 1em 2em;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .download-cv a:hover {
+        background-color: #555;
+    }
+    #about, #skills {
+        margin-bottom: -2em; /* Ajustez cette valeur pour réduire l'espace */
+    }
+</style>
+<body>
+    <header>
+        <h1>Matteo Teixeira</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">À propos</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about-skills">
+        <div class="container">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="c:\Users\matte\OneDrive\Bureau\One drive\Première et seconde\Images\Saved Pictures\1702907062297.jpg" alt="Photo de profil">
+                </div>
+                <div class="download-cv">
+                    <a href="c:\Users\matte\Desktop\Autres\Perso\Mattéo\CV et Lettre de motivation\CV à jours\CV_Matteo_TEIXEIRA.pdf" target="_blank">Télécharger mon CV</a>
+                </div>
+            </div>
+            <div class="content">
+                <section id="about">
+                    <h2>À propos</h2>
+                    <p>Bonjour à toutes et à tous, je suis Mattéo Teixeira, étudiant en 3e années de licence d'économie parcours International Track de la Saint-Etienne School of Economics (SE2).<br><br>
+                        Actuellement à Sofia en Bulgarie pour un Erasums d'un an à l'Université Saint-Clément d'Ohrid.<br><br>
+                        Cette année en Erasmus est pour moi l'occasion de parfaire mon cursus en économie ainsi que d'allier ce domaine à l'écologie qui est un sujet des plus importants aujourd'hui.<br><br>
+                        C'est dans cette optique que la plupart de mes travaux sont orientés vers l'alliance entre l'économie et l'écologie, alors que notre modèle économique actuel est à bout de souffle, il est nécessaire d'allier ces disciplines.</p>
+                </section>
+
+                <section id="skills">
+                    <h2>Mes compétences</h2>
+                    <div class="skills-list">
+                        <ul>
+                            <li>Rédaction de rapports et d'articles</li>
+                            <li>Travail en équipe</li>
+                            <li>Organisation</li>
+                            <li>Maîtrise de l'anglais</li>
+                        </ul>
+                        <ul>
+                            <li>Compétences en recherche</li>
+                            <li>Travail en autonomie (plusieurs stages en distanciel)</li>
+                            <li>Maîtrise de différents langages de codage (HTML, Python, R, CSS...)</li>
+                            <li>Maîtrise du pack office</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Teixeira Mattéo</p>
+        <p>Email: <a href="mailto:matteo.teixeira45@gmail.com">matteo.teixeira45@gmail.com</a></p>
+        <p>Téléphone: <a href="tel:+33785089921">+33 7 85 08 99 21</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0dede;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 1em; /* Réduit le padding */
+    margin: 0.5em 0; /* Réduit la marge */
+    background-color: #e0dede;
+    flex: 1; /* Permet à la section de prendre tout l'espace disponible */
+}
+
+section h2 {
+    text-align: center;
+}
+
+.project {
+    margin-bottom: -3.5em; /* Réduit la marge en bas */
+    padding: 1em;
+    background-color: #e0dede;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.project-header h3 {
+    background-color: #a6a6a6;
+    color: #fff;
+    padding: 4.5em;
+    border-radius: 50%;
+    font-size: 1.2em;
+    text-align: center;
+    width: 3em;
+    height: 3em;
+    line-height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #000; /* Ajout de la bordure noire */
+}
+
+.project-header p {
+    background-color: #e0dede;
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 5px;
+    margin: 0;
+    flex-grow: 1;
+    font-size: 1em;
+    border: 0.5px solid #000; /* Ajout de la bordure noire */
+    text-align: center; /* Centre le texte */
+}
+
+.project-header.left h3 {
+    margin-right: 1em;
+}
+
+.project-header.right h3 {
+    margin-left: 1em;
+    order: 2;
+}
+
+.project-header.right p {
+    order: 1;
+}
+
+.download-link {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.download-link:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2em 0;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    margin: 0 1em;
+}
+
+footer a {
+    color: #a6a6a6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Matteo Teixeira</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">À propos</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <div class="project-header left">
+                <h3>Agroécologie (FR)</h3>
+                <p>Dans le cadre d'une vacation pour SE2, j'ai eu la chance de coécrire, avec l'enseignante-chercheuse Magali Chaudey, la partie sur l'agroécologie dans le "Rapport économique de la Loire" (ceci n'est pas la version définitive car le document n'est pas encore sorti).<br>
+                <a href="PDF portfolio/Agroécologie.pdf" target="_blank" class="download-link">Voir le PDF</a></p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-header right">
+                <h3>Policy Brief Environnement et Assurance (ENG)</h3>
+                <p>Ce policy brief porte sur l'impact du changement climatique sur l'assurance en France pour mettre en évidence la question de l'inassurabilité d'une France avec 4°C en plus ainsi que les inégalités que cela risque de représenter.<br>
+                <a href="PDF portfolio/Policy Brief Environnement et Assurance.pdf" target="_blank" class="download-link">Voir le PDF</a></p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-header left">
+                <h3>L'économie régénérative (FR)</h3>
+                <p>Le travail demandé était de faire une brève présentation du document puis d'en lister les idées pour finalement en faire une critique.<br>
+                <a href="PDF portfolio/Economie régénérative.pdf" target="_blank" class="download-link">Voir le PDF</a></p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-header right">
+                <h3>Comparaison de l'évolution des villes d'Annecy et d'Orléans (FR)</h3>
+                <p>Lors d'un cours de développement territorial, il nous a été demandé de comparer 2 villes de taille similaire mais avec des trajectoires démographiques différentes et de les expliquer par différentes hypothèses. De plus, il nous a été demandé de montrer comment la ville dynamique démographiquement s'emparait du sujet de l'environnement.<br>
+                <a href="PDF portfolio/Comparaison entre la ville Annecy et Orléans.pdf" target="_blank" class="download-link">Voir le PDF</a></p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-header left">
+                <h3>Policy Brief La fuite des cerveaux en Afrique Subsaharienne (ENG)</h3>
+                <p>Ce policy brief porte sur les déterminants de la fuite des cerveaux en Afrique Subsaharienne ainsi que son impact sur le développement de cette région.<br>
+                <a href="PDF portfolio/Policy Brief Fuite des cerveaux en Afrique Sub Saharienne.pdf" target="_blank" class="download-link">Voir le PDF</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Teixeira Mattéo</p>
+        <p>Email: <a href="mailto:matteo.teixeira45@gmail.com">matteo.teixeira45@gmail.com</a></p>
+        <p>Téléphone: <a href="tel:+33785089921">+33 7 85 08 99 21</a></p>
+    </footer>
+</body>
+</html>
